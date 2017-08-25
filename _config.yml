@@ -14,18 +14,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: zh-CN
-title: IheXon!
+title: AokiSec Lab
 email: zzheasy@gmail.com
-description: 开源技术站点
+description: 墨眉网络安全开源技术站点
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: "https://ihexon.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: # "https://jjusec.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author: 
   name: ZhuZhiHao
   twitter:
   picture: /assets/images/14349453.jpe
 twitter_username:
-github_username: ihexon
-logo: /assets/images/terminal-icon.png
+github_username: jjusec
+logo: /assets/images/jjusec.jpeg
 
 # Conversion
 markdown: kramdown
