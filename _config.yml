@@ -16,7 +16,7 @@
 lang: zh-CN
 title: AokiSec Lab
 email: zzheasy@gmail.com
-description: 墨眉网络安全开源技术站点
+description: AokiSec Lab OpenSource Website
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: # "https://jjusec.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author: 
@@ -52,10 +52,6 @@ sass:
 # Outputting
 permalink: /:categories/:title/
 timezone: Asia/hong_kong # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-# Build settings
-markdown: kramdown
-theme: jekyll-theme-basically-basic
 
 plugins:
   - jekyll-feed
