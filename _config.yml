@@ -18,7 +18,7 @@ title: IheXon!
 email: zzheasy@gmail.com
 description: 开源技术站点
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: "https://ihexon.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author: 
   name: ZhuZhiHao
   twitter:
@@ -51,7 +51,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/hong_kong # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Build settings
 markdown: kramdown
