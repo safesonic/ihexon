@@ -8,14 +8,14 @@
 minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
 
 # Site Settings
-locale                   : "en"
-title                    : "Site Title"
+locale                   : "zh-CN"
+title                    : "这里是IHEXON的开源站点"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "IhexOn"
+description              : &description "IhexOn开源技术站点"
+url                      : "https://ihexon.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "ihexon/ihexon.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -79,19 +79,19 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
-  uri              :
+  name             : "朱智浩"
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "还记得这样一个残酷的事实,我,没有女朋友...."
+  location         : "地球人"
+  email            : "zzheasy@gmail.com"
+  uri              : "https://ihexon.github.io"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "ihexon"
   gitlab           :
   google_plus      :
   keybase          :
@@ -243,7 +243,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: # true
-      share: true
+      read_time: false
+      comments: false # true
+      share: false
       related: true
