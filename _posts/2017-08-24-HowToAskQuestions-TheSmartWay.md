@@ -1,6 +1,7 @@
 ---
 title: 提问的智慧
-categories: Docs
+categories: Develop
+tags: 总结/文档
 ---
 
 **How To Ask Questions The Smart Way**

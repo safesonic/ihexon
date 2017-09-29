@@ -1,5 +1,7 @@
 ---
 title: 和我一起编写Makefile
+categories: Develop
+tags: Makefile教程
 ---
 
 - 保持源文件目录结构清晰，就需要把各种文件分类存放，便于日后维护。如何编写Makefile，一次性编译所有的存放在`src`目录下的源代码（.c），并将目标（.o）文件输出`obj`文件夹下？

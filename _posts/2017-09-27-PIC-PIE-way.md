@@ -1,6 +1,7 @@
 ---
 title: 什么是PIC/PIE代码
-categories: CodeAnalysis
+categories: Develop
+tags: 二进制分析
 ---
 
 ## 简介
