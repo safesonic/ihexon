@@ -1,5 +1,6 @@
 ---
 title: 什么是PIC/PIE代码
+categories: CodeAnalysis
 ---
 
 ## 简介
