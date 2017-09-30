@@ -1,7 +1,7 @@
 ---
 title: 和我一起编写Makefile
 categories: Develop
-tags: Makefile教程
+tags: Makefile
 ---
 
 - 保持源文件目录结构清晰，就需要把各种文件分类存放，便于日后维护。如何编写Makefile，一次性编译所有的存放在`src`目录下的源代码（.c），并将目标（.o）文件输出`obj`文件夹下？
@@ -10,7 +10,7 @@ tags: Makefile教程
 
 - 首先列出目录结构
 
-```
+```shell
 zzh@localhost:~$ tree src/
 src/
 ├── changes.html
@@ -36,7 +36,7 @@ src/
 
 - 首先贴出`Makefile`
 
-```
+```makefile
 # fileyze: a tool to list file size timestamp owner/user/groups and etc information in tree like Output
 # orign http://mama.indstate.edu/users/ice/tree
 
@@ -83,7 +83,7 @@ CFLAGS和LD\_FLAGS是编译参数用于编译制定平台的源文件和连接�
 
 此时`$(OBJ_FILES)`没有生成，所以Makefile会自动处理依赖，Make会接着往下读取Makefile，发现了`obj/%.o: src/%.c`一行
 
-```
+```makefile
 obj/%.o: src/%.c
     ¦  $(CC) $(CFLAGS) $(CC_FLAGS) -c -o $@ $<
 
@@ -98,7 +98,7 @@ obj/%.o: src/%.c
 ```
 
 真正执行起来应该是这样的:
-```
+```shell
 第一次展开...
 cc -ggdb -Wall -DLINUX -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -c -o obj/xml.o src/xml.c
 第二次展开...
@@ -110,7 +110,7 @@ cc -ggdb -Wall -DLINUX -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -c -o obj/h
 
 接下来只要链接目标文件生成tree.bin可执行文件就OK
 
-```
+```Make
 tree.bin: $(OBJ_FILES)
 	   $(CC) $(CFLAGS) $(LD_FLAGS) -o $@ $^
 ```
@@ -119,7 +119,7 @@ tree.bin: $(OBJ_FILES)
 
 编译指令真正处理起来应该是这样的：
 
-```
+```shell
 cc -ggdb -Wall -DLINUX -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -s -o tree.bin obj/xml.o obj/html.o obj/strverscmp.o obj/unix.o obj/hash.o obj/json.o obj/color.o obj/tree.o
 ```
 
