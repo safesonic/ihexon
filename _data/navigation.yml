@@ -10,3 +10,5 @@ main:
     url: /tags/
   - title: "About"
     url: /aboutme/
+  - title: "网络要饭"
+    url: /donation/
