@@ -22,7 +22,7 @@ layout: splash
 
 ## 经历 ##
 
-我是0工作经历，0项目经历，但我喜欢和一群志同道合的小伙伴，一起分析解决问题。
+我喜欢和一群志同道合的小伙伴，一起分析解决问题。
 
 习惯熬夜逛GitHub，Kernel mail list，Debian mail archive，RFC documents，国内开源社区。
 
