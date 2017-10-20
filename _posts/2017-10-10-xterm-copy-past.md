@@ -1,7 +1,11 @@
 ---
 title: X系统复制粘贴机制
 categories: Develop
-tags: DevTools
+tags: 
+  - DevTools
+  - Xterm
+  - Xorg
+  - X11
 header:
     overlay_image: ../images/Screenshot_20171010_022010.png
     overlay_filter: 0.5
