@@ -1,6 +1,7 @@
 ---
 title: Linux内核模块签名
 categories: Develop
+layout: splash
 tags:
     - Linux
     - Security
