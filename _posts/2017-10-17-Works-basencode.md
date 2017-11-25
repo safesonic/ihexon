@@ -7,7 +7,6 @@ layout: splash
 
 ## Info ##
 
-我叫**朱智浩**
 
 ```
  Phone:13177815083
