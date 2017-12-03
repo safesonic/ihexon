@@ -100,6 +100,10 @@ authorityKeyIdentifier=keyid
   
   手动执行签名：`scripts/sign-file sha512 kernel-signkey.priv kernel-signkey.x509 zlib.ko`
 
+  In the end , reload the signatured kernel modules.
+
+# 验证内核时候签名：
+
   - 验证内核时候签名：
   带有签名的内核在文件末尾有数字签名，使用hexedit或者xxd查看文件末尾验证。
   
