@@ -1,5 +1,9 @@
 ---
 title: 认识 FireFox 命令行参数
+categories: Develop
+tags:
+  - 前端
+  - 调试
 ---
 
 # 啥？
