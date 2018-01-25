@@ -13,7 +13,7 @@ title                    : "这里是IHEXON的开源站点"
 title_separator          : "-"
 name                     : &name "IhexOn"
 description              : &description "关注开源，Linux，云计算，WEB开发，IhexOn开源技术站点"
-url                      : "https://ihexon.github.io"
+url                      : https://ihexon.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ihexon/ihexon.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -89,8 +89,8 @@ author:
   bio              : "得到的是安逸，失去的是自由..."
   location         : "地球人"
   email            : "zzheasy@gmail.com"
-  uri              : "https://ihexon.github.io"
-  home             : "https://ihexon.github.io"
+  uri              : https://ihexon.github.io
+  home             : https://ihexon.github.io
   bitbucket        :
   codepen          :
   dribbble         :
