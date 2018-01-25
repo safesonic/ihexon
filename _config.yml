@@ -90,7 +90,7 @@ author:
   location         : "地球人"
   email            : "zzheasy@gmail.com"
   uri              : "https://ihexon.github.io"
-  home             : # null (default), "absolute or relative url to link to author home"
+  home             : "https://ihexon.github.io"
   bitbucket        :
   codepen          :
   dribbble         :
