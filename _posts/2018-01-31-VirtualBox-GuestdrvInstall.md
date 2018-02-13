@@ -16,8 +16,6 @@ GuestDriver本质上是一组驱动模块，随VirtualBox二进制包发行，Li
 该ISO自动插入到虚拟机中的光驱中供用户安装。
 
 这个额外的驱动模块提供系统与虚拟机共享剪贴板，共享文件夹，拖放等额外功能。这篇文档描述在物理机ArchLinux上虚拟Debian unstable操作系统，并在虚拟机内安装GuestDriver。
-```
-```
 
 ## 构建Modules所需的依赖
 
