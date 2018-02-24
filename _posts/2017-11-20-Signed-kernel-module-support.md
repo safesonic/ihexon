@@ -92,12 +92,12 @@ authorityKeyIdentifier=keyid
 同样会输出`x509.genkey，signing_key.priv，signing_key.x509`三个文件。
 
   - 使用密钥对给未签名的密钥对签名
-  在meke moudles\_install时，Makefile调用一个外置命令，外置命令使用signing\_key.pri，signing\_key.x509这俩个文件给模块签名，但我们使用自定义密钥对重新编译了内核，则需要手动给旧的模块签名。
+  在`meke moudles_install`时，Makefile调用一个外置PERL程序在安装阶段给模块签名，外置命令使用`signing_key.pri，signing_key.x509`这俩个文件给模块签名，如果我们使用自定义密钥对重新编译了内核，则需要手动给旧的模块签名。
 
-  用于签名的是一个PERL脚本，存放在内核源码树目录下：`scripts/sign-file`
-  
+  PERL签名脚本存放在内核源码树目录下：`scripts/sign-file`
+
   此命令传入四个参数：<加密算法> <私有密钥> <公钥> <内核模块名>
-  
+
   手动执行签名：`scripts/sign-file sha512 kernel-signkey.priv kernel-signkey.x509 zlib.ko`
 
   In the end , reload the signatured kernel modules.
@@ -105,8 +105,10 @@ authorityKeyIdentifier=keyid
 # 验证内核时候签名：
 
   - 验证内核时候签名：
-  带有签名的内核在文件末尾有数字签名，使用hexedit或者xxd查看文件末尾验证。
-  
+      带有签名的内核在文件末尾有数字签名，使用hexedit或者xxd查看文件末尾验证。
+
+      `xxd cn.ko`:
+
   ```
   00001450  9d eb d4 05 58 f5 1c 72  52 96 60 91 f3 a7 71 63  |....X..rR.`...qc|
   00001460  9e ef dc a4 43 52 63 14  eb 9a f4 45 5a 57 5c 5a  |....CRc....EZW\Z|
@@ -122,11 +124,13 @@ authorityKeyIdentifier=keyid
   ```
 
   同时，我们还可以去掉数字签名：
-  
-  ```
-  zzh$ strip --strip-debug zlib.ko
-  zzh$ hexdump -C crc8.ko
-  
+
+```
+zzh$ strip --strip-debug zlib.ko
+zzh$ hexdump -C crc8.ko
+```
+
+```
   000011c0  00 00 00 00 00 00 00 00  58 0a 00 00 00 00 00 00  |........X.......|
   000011d0  c7 01 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
   000011e0  01 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
@@ -135,7 +139,7 @@ authorityKeyIdentifier=keyid
   00001210  b6 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
   00001220  01 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
   00001230
-  ```
+```
 
 # 自签名内核用于UEFI - Security Boots
   [Booting a Self-signed Linux Kernel](http://www.kroah.com/log/blog/2013/09/02/booting-a-self-signed-linux-kernel/)
