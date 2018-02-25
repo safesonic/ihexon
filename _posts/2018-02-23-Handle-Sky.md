@@ -21,8 +21,8 @@ tags:
 逃避现在,又疯狂回忆从前.
 
 <figure>
-    <a href="/images/20180223/IMG_20180222_165406-02.jpeg"><img src="/images/20180223/IMG_20180222_165406-02-small.jpeg"></a>
-    <figcaption>2018-02-23 上饶万年,天空是死寂的</figcaption>
+    <a href="{{ site.url }}{{ site.baseurl }}/images/20180223/IMG_20180222_165406-02.jpeg"><img src="{{ site.url }}{{ site.baseurl }}/images/20180223/IMG_20180222_165406-02-small.jpeg"></a>
+    <figcaption>2018-02-23 上饶万年,天空</figcaption>
 </figure>
 
 我是一个虚伪的人,悲哀又又不断的犯错.

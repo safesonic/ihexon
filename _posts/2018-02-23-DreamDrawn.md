@@ -13,7 +13,7 @@ tags:
 > Handle
 
 <figure>
-    <a href="/images/20180223/IMG_20180223_190123-01.jpeg"><img src="/images/20180223/IMG_20180223_190123-01.jpeg"></a>
+    <a href="{{ site.url }}{{ site.baseurl }}/images/20180223/IMG_20180223_190123-01.jpeg"><img src="{{ site.url }}{{ site.baseurl }}/images/20180223/IMG_20180223_190123-01.jpeg"></a>
     <figcaption>2018-02-23 在上饶万年</figcaption>
 </figure>
 
