@@ -13,8 +13,8 @@ title                    : "这里是IHEXON的开源站点"
 title_separator          : "-"
 name                     : &name "IhexOn"
 description              : &description "关注开源，Linux，云计算，WEB开发，IhexOn开源技术站点"
-url                      : https://ihexon.github.io
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : https://jjusec.github.io
+baseurl                  : /ihexon # the subpath of your site, e.g. "/blog"
 repository               : "ihexon/ihexon.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
