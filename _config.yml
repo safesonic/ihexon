@@ -13,7 +13,7 @@ title                    : "Across this new Divide"
 title_separator          : "-"
 name                     : &name "IHEXON"
 description              : &description "Across this new Divide"
-url                      : https://ihexon.github.io
+url                      : https://safesonic.github.io
 baseurl                  : "/ihexon" # the subpath of your site, e.g. "/blog"
 repository               : "ihexon/ihexon"
 teaser                   : "/images/20180223/header.jpeg"  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
