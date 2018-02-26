@@ -16,7 +16,7 @@ description              : &description "Across this new Divide"
 url                      : https://ihexon.github.io
 baseurl                  : "/ihexon" # the subpath of your site, e.g. "/blog"
 repository               : "ihexon/ihexon"
-teaser                   : "/images/20180223/IMG_20180222_165406-02-small.jpeg"  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/images/20180223/header.jpeg"  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -91,7 +91,7 @@ analytics:
 # Site Author
 author:
   name             : "做梦专业户"
-  avatar           : "/images/20180223/IMG_20180222_165450-01-header.jpeg"
+  avatar           : "/images/20180223/header.jpeg"
   bio              : "得到的是安逸，失去的是自由..."
   location         : "地球人"
   email            : "zzheasy@gmail.com"
